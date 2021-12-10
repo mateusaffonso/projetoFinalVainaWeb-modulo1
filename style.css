@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Monteserrat", Roboto;
+
+}
+
+
+
+.container-header{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 4.5vh;
+    margin-left: 6.5vw;
+}
+
+.container-header nav ul{
+    width:33vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8vw;
+    font-size: 3vh;
+}
+
+.container-main{
+    
+
+}
+
+.container-top{
+    border: solid black 2px;
+    height: 70vh;
+    color: white;
+    background-image: url("web/laranjaazul.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.main-phrases{
+    height: 25vh;
+    margin-left: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.container-top h2{
+    font-size: 4.5vw;
+    border: solid black 2px;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container-top div p{
+    border: solid black 2px;
+    font-size: 2vw;
+    width: fit-content;
+}
