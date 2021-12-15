@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
     font-family: "Monteserrat", Roboto;
+    
 
 }
 
-
+/* --HEADER--*/
 
 .container-header{
     height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:relative;
 
 }
 
@@ -24,16 +27,33 @@ h1{
     margin-left: 6.5vw;
 }
 
+
 .container-header nav ul{
     width:33vw ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 8vw;
+}
+
+li{
+    color: black;
     font-size: 3vh;
 }
 
+li:hover, .active {
+    font-weight: bolder;
+    font-size: 3.5vh;
+    
+}
+
+/* --HEADER--*/
+
+/* --MAIN--*/
+
 .container-main{
+    background-color: #FFFFFF;
+    height: auto;
     
 
 }
@@ -61,15 +81,212 @@ h1{
 }
 
 .container-top h2{
-    font-size: 4.5vw;
+    font-size: 4.85vw;
     border: solid black 2px;
-    width: 55vw;
+    width: 60vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .container-top div p{
     border: solid black 2px;
     font-size: 2vw;
     width: fit-content;
+    
+}
+
+.container-main-mid{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+
+    
+}
+
+.container-figures{
+    width: 85vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main-mid figure img{
+    width: 300px;
+    height: auto;
+    padding: 7px;
+
+    
+
+}
+
+/* --MAIN--*/
+
+/* --FOOTER--*/
+
+footer{
+    height: auto;
+    background-color: #DCDCDC;
+}
+
+.container-footer{
+    height: 15vh;
+    width: 73vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6vw;
+    
+}
+
+.container-icons{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer nav ul li a img{
+    height: 3.5vh;
+
+}
+
+.container-copyright{
+    width: 46vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.buttom-top{
+    display: none;
+}
+
+
+/* --FOOTER--*/
+
+/* MEDIA */
+
+@media (max-width: 375px){
+    .container-top{
+        border: solid black 2px;
+        height: 90vh;
+        color: white;
+        background-image: url("mobile/laranja\ azul\ recorte.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    
+    }
+
+    .main-phrases{
+        border: solid;
+        height: 48vh;
+        width: 67vw;
+        margin-left: 12vw;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        
+    }
+
+    .container-top h2{
+        width: auto;
+        font-size: 47px;
+        margin-top: 9px;
+    }
+
+    .container-top div p{
+        font-size: 16px;
+        margin-bottom: 12px;
+
+    }   
+
+    .container-header nav ul{
+        display: none;
+    }
+
+    footer{
+        background-color: white;
+    }
+
+
+    .container-footer{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        
+    }
+
+    .container-icons{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7FDBD4;
+        padding: 6px;
+    }
+
+    .container-footer nav ul li a img{
+        height: 3.5vh;
+    
+    }
+
+    .container-copyright {
+        border: none;
+        width: 80vw;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 3vw;
+        padding: 3vh;
+        
+    }
+
+    h4{
+        font-size: 3.7vw;
+        font-weight: bolder;
+    }
+
+    .conteiner-paragraph{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .buttom-top{
+        position: relative;
+        width: 17vw;
+        right: 0;
+        padding: 5px;
+        background-color: rgb(59, 61, 56);
+        font-size: 15px;
+        box-shadow: 3px 3px 10px #333;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+    .buttom-top a{
+        color: #708090;
+    }
+
+
+
+
 }
