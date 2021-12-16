@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto&display=swap');
 
 *{
     margin: 0;
@@ -13,12 +13,24 @@
 
 /* --HEADER--*/
 
+header{
+    
+
+}
+
+.menu-mobile{
+    display: none;
+}
+
 .container-header{
     height: 12vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:relative;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1;
 
 }
 
@@ -39,12 +51,17 @@ h1{
 li{
     color: black;
     font-size: 3vh;
+    width: 5vw;
 }
 
 li:hover, .active {
     font-weight: bolder;
     font-size: 3.5vh;
     
+}
+.jeitinho{
+    height: 12vh;
+    width: 100%;
 }
 
 /* --HEADER--*/
@@ -59,7 +76,6 @@ li:hover, .active {
 }
 
 .container-top{
-    border: solid black 2px;
     height: 70vh;
     color: white;
     background-image: url("web/laranjaazul.png");
@@ -69,6 +85,7 @@ li:hover, .active {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 
 }
 
@@ -82,16 +99,16 @@ li:hover, .active {
 
 .container-top h2{
     font-size: 4.85vw;
-    border: solid black 2px;
     width: 60vw;
     display: flex;
     justify-content: flex-start;
 }
 
 .container-top div p{
-    border: solid black 2px;
     font-size: 2vw;
     width: fit-content;
+    font-weight:100 ;
+    border: solid 2px black;
     
 }
 
@@ -115,7 +132,7 @@ li:hover, .active {
 }
 
 .container-main-mid figure img{
-    width: 280px;
+    width: 270px;
     height: auto;
     padding: 7px;
 
@@ -134,11 +151,12 @@ footer{
 
 .container-footer{
     height: 15vh;
-    width: 73vw;
+    width: 70vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 6vw;
+    margin-left: 10.1vw;
+
     
 }
 
@@ -154,10 +172,11 @@ footer{
 }
 
 .container-copyright{
-    width: 46vw;
+    width: 43vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 2.4vh;
     
 
 }
@@ -172,6 +191,40 @@ footer{
 /* MEDIA */
 
 @media (max-width: 375px){
+
+    .container-header{
+        height: 6vh;
+    }
+
+    .jeitinho{
+        display: none;
+    }
+
+    .container-header{
+        position: none;
+        z-index: none;
+        justify-content: flex-start;
+
+    }
+
+    .menu-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black ;
+        height: 100%;
+        width: 20vw;
+    }
+
+    .menu-mobile img{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+
+
     .container-top{
         border: solid black 2px;
         height: 90vh;
@@ -189,7 +242,7 @@ footer{
 
     .main-phrases{
         border: solid;
-        height: 48vh;
+        height: 35vh;
         width: 67vw;
         margin-left: 12vw;
         display: flex;
@@ -201,7 +254,6 @@ footer{
     .container-top h2{
         width: auto;
         font-size: 47px;
-        margin-top: 9px;
     }
 
     .container-top div p{
@@ -223,6 +275,7 @@ footer{
         height: auto;
         width: 100vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -231,26 +284,27 @@ footer{
     }
 
     .container-icons{
-        width: 80vw;
+        width: 65vw;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: #7FDBD4;
-        padding: 6px;
+        padding: 9px;
+
     }
 
     .container-footer nav ul li a img{
-        height: 3.5vh;
+        height: 25px;
     
     }
 
     .container-copyright {
-        border: none;
-        width: 80vw;
+        border: black 2px solid;
+        width: 65vw;
         height: auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:flex-start;
         flex-wrap: wrap;
         font-size: 3vw;
         padding: 3vh;
@@ -268,8 +322,7 @@ footer{
         align-items: flex-start;
     }
 
-    .buttom-top{
-        position: relative;
+    .buttom-top{ 
         width: 17vw;
         right: 0;
         padding: 5px;
