@@ -107,7 +107,7 @@ li:hover, .active {
 .container-top div p{
     font-size: 2vw;
     width: fit-content;
-    font-weight:100 ;
+    font-weight:100;
     border: solid 2px black;
     
 }
@@ -194,6 +194,7 @@ footer{
 
     .container-header{
         height: 6vh;
+        width: 100%;
     }
 
     .jeitinho{
@@ -213,7 +214,7 @@ footer{
         align-items: center;
         background-color: black ;
         height: 100%;
-        width: 20vw;
+        width: 20%;
     }
 
     .menu-mobile img{
@@ -228,6 +229,7 @@ footer{
     .container-top{
         border: solid black 2px;
         height: 90vh;
+        width: 100%;
         color: white;
         background-image: url("mobile/laranja\ azul\ recorte.png");
         background-repeat: no-repeat;
@@ -268,12 +270,15 @@ footer{
 
     footer{
         background-color: white;
+        width: 100%;
+        height: auto;
     }
 
 
     .container-footer{
+        border: black 2px solid;
         height: auto;
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -284,7 +289,8 @@ footer{
     }
 
     .container-icons{
-        width: 65vw;
+        border: solid;
+        width:70vw;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -294,20 +300,19 @@ footer{
     }
 
     .container-footer nav ul li a img{
-        height: 25px;
+        height: 23px;
     
     }
 
     .container-copyright {
-        border: black 2px solid;
-        width: 65vw;
+        
+        width:70vw;
         height: auto;
         display: flex;
         justify-content: space-between;
-        align-items:flex-start;
-        flex-wrap: wrap;
+        align-items:center;
         font-size: 3vw;
-        padding: 3vh;
+        
         
     }
 
@@ -316,11 +321,24 @@ footer{
         font-weight: bolder;
     }
 
-    .conteiner-paragraph{
+    .container-paragraph{
+        border: solid 2px black;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+        flex-wrap: wrap;
+        width: 69.75%;
+        height: 15vh;
+        margin-top: 3vh;
+        
     }
+
+    .container-paragraph p{
+        font-size: 2vh;
+    
+    }
+
 
     .buttom-top{ 
         width: 17vw;
